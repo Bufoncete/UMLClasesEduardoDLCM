@@ -8,5 +8,15 @@ class Member
 class Conference
 class BoardMeeting
 class BoardMember
-
+AAUOC <|--right Location
+AAUOC <|--down Event
+AAUOC <|--right Person
+Event <|-- Conference
+Event <|--- BoardMeeting
+Person --- Member
+Member <|--- BoardMember
+Event <|-- Member
+Event -- Location
+Conference -- Person
+BoardMeeting--BoardMember
 @enduml
